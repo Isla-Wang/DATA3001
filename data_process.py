@@ -42,9 +42,9 @@ while i <= dtime[-1]:
         index = dtime.index(i)
         t_temp = 0
         t_ntemp = 0
-        for latitude in range(0,4):
+        for latitude in range(0,5):
 
-            for longitude in range (130,134):
+            for longitude in range (130,135):
                 tt = ds['sea_surface_temperature'][index,latitude,longitude].data.item(0) 
                 if tt != 0.0:
                     t_temp += tt
